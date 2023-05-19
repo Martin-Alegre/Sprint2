@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINDY GAMES</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="shortcut icon" href="./assets/image/Image-sprint1/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="information.html">More Information</a>
+                <a href="benefitsTips.html">Benefits and Tips</a>
+                <a href="raffle.html">Raffle</a>
+                <img class="img-logo" src="/assets/image/Image-sprint1/logo.png" alt="joistick">
+            </nav>
+        </div>
+        <h1>MINDY GAMES</h1>
+    </header>
+    <main>
+        <div class="div-raffle-h">
+            <h2>Raffle</h2>
+            <h4>you can collaborate and register for one of our tournaments</h4>
+        </div>
+        <section class="section-raffle">
+            <div class="div-raffle">
+                <h5>Our location where the tournaments are held is at:</h5>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d450943.19237689616!2d-82.783958330153!3d27.994089439029498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C%20Florida%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1684437602921!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <form class="form-raffle" action="./show_data.html" method="get">
+                <fieldset class="fieldset-1">
+                    <label for="nombre">First Name</label>
+                    <input type="text" id="nombre" name="nombres" placeholder="Martin">
+                    <label for="apellido">Last Name</label>
+                    <input type="text" id="apellido" name="apellidos" placeholder="Alegre">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="emails" placeholder="example@minhub.com">
+                    <label for="menu-game">Choose Game</label>
+                    <select name="game" id="menu-game">
+                        <option value="lol">League of legends</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="cs">Counter Strike</option>
+                    </select>
+                    <label for="menu-date">Choose Date</label>
+                    <select name="date" id="menu-date">
+                        <option value="20/05">20/05</option>
+                        <option value="12/10">12/10</option>
+                        <option value="27/11">27/11</option>
+                    </select>
+                </fieldset>
+                <fieldset class="fieldset-2">
+                    <legend>Payment Option</legend>
+                        <label for="pago"><input type="radio" id="pago" name="pago" value="Cash">Cash</label>
+                        <label for="pago2"><input type="radio" id="pago2" name="pago" value="Credit">Credit Card</label>
+                        <label for="pago3"><input type="radio" id="pago3" name="pago" value="Debit">Debit Card</label>
+                </fieldset>
+                <fieldset class="fieldset-3">
+                    <label for="mensajes">Message (Optional)</label>
+                    <textarea name="mensajes" id="mensajes" cols="5" rows="5"></textarea>
+                </fieldset>
+                <div class="div-boton">
+                    <label for="terminos"><input type="checkbox" id="terminos" name="Terminos-condiciones"> I accept terms and condition</label>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h4>Created by: Martin Alegre</h4>
+    </footer>
+</body>
+</html>
